@@ -53,7 +53,6 @@ if (!isset($_SESSION['login_status'])) {
             </a><!-- sl-menu-link -->
             <a href="../index.php" target="_blank" class="sl-menu-link">
                 <div class="sl-menu-item">
-                    <!-- <i class="fa fa-globe" aria-hidden="true"></i> -->
                     <i class="fa fa-internet-explorer tx-20" aria-hidden="true"></i>
                     <span class="menu-item-label">Landing Page</span>
                 </div><!-- menu-item -->
@@ -159,8 +158,8 @@ if (!isset($_SESSION['login_status'])) {
                     </a>
                     <div class="dropdown-menu dropdown-menu-header wd-200">
                         <ul class="list-unstyled user-profile-nav">
-                            <!-- <li><a target="_blank" href="../index.php"><i class="icon ion-ios-gear-outline"></i> Visit Homepage</a></li> -->
                             <li><a href="profile.php"><i class="icon ion-ios-person-outline"></i>View Profile</a></li>
+                            <li><a href="change_password.php"><i class="icon ion-ios-gear-outline"></i>Change Password</a></li>
                             <li><a href="signout.php"><i class="icon ion-power"></i> Sign Out</a></li>
                         </ul>
                     </div><!-- dropdown-menu -->

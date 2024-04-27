@@ -14,13 +14,10 @@ require_once "dbc.php";
 <div class="sl-pagebody">
     <div class="sl-page-title">
         <h5>Update <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['full_name'] ?> Profile</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">
         <h6 class="card-body-title">Update <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['full_name'] ?> Profile</h6>
-        <p class="mg-b-20 mg-sm-b-30">A form with a label on top of each form control.</p>
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <form method="POST" action="profile_edit_post.php" enctype="multipart/form-data" id="edit_form">
@@ -33,7 +30,7 @@ require_once "dbc.php";
                                     <label class="form-control-label">Profile Photo: <span class="tx-danger">*</span></label>
                                     <input class="form-control mb-2" type="file" name="profile_new_photo" onchange="readURL(this);">
                                     <small>Photo Size 150*150 px</small><br>
-                                    <img class="hidden img-thumbnail " width="150px" height="150px" id="profile_new_photo" src="#" alt="Profile Photo" />
+                                    <img class="hidden img-thumbnail " width="150px" height="150px" id="profile_new_photo" src="img/users/<?= spy_sabbir_single_select('users', $_SESSION['user_id'])['profile_photo'] ?>" alt="Profile Photo" />
                                     <script>
                                         function readURL(input) {
                                             if (input.files && input.files[0]) {
@@ -64,7 +61,6 @@ require_once "dbc.php";
                                         <option value="developer" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['designation'] == 'developer' ? 'selected' : '' ?>>Developer</option>
                                         <option value="user" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['designation'] == 'user' ? 'selected' : '' ?>>User</option>
                                     </select>
-                                    <!-- <input class="form-control" type="text" name="user_designation" value="<?= spy_sabbir_single_select('users', $_SESSION['user_id'])['designation'] ?>"> -->
                                 </div>
                             </div>
                             <!-- col-6 -->
@@ -76,13 +72,23 @@ require_once "dbc.php";
                             </div>
                             <!-- col-6 -->
                             <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label class="form-control-label">Gender: <span class="tx-danger">*</span></label>
+                                    <select name="user_gender" class="form-control custom-select">
+                                        <option value="male" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['gender'] == 'male' ? 'selected' : '' ?>>Male</option>
+                                        <option value="female" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['gender'] == 'female' ? 'selected' : '' ?>>Female</option>
+                                        <option value="other" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['gender'] == 'other' ? 'selected' : '' ?>>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- col-6 -->
+                            <div class="col-lg-6">
                                 <div class="form-group mg-b-10-force">
                                     <label class="form-control-label">Date Of Birth: <span class="tx-danger">*</span></label>
                                     <input class="form-control" type="date" name="user_date_of_birth" value="<?= spy_sabbir_single_select('users', $_SESSION['user_id'])['date_of_birth'] ?>">
                                 </div>
                             </div>
                             <!-- col-6 -->
-
                         </div><!-- row -->
 
                         <div class="form-layout-footer text-center mt-3">

@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 require_once "dbc.php";
@@ -24,8 +23,9 @@ $user_id = $_POST['user_id'];
 $user_name = $_POST['user_name'];
 $user_designation = $_POST['user_designation'];
 $user_phone_number = $_POST['user_phone_number'];
+$user_gender = $_POST['user_gender'];
 $user_date_of_birth = $_POST['user_date_of_birth'];
-$update_query = "UPDATE users SET full_name = '$user_name', designation = '$user_designation', phone_number = '$user_phone_number', date_of_birth = '$user_date_of_birth' WHERE id = '$user_id'";
+$update_query = "UPDATE users SET full_name = '$user_name', designation = '$user_designation', phone_number = '$user_phone_number', gender = '$user_gender', date_of_birth = '$user_date_of_birth' WHERE id = '$user_id'";
 mysqli_query(connect_to_db(), $update_query);
 $_SESSION['edit_status'] = "Profile Edit Successfully!";
 header('location: profile.php');

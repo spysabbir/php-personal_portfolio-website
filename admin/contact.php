@@ -57,7 +57,6 @@ $count_query2 = "SELECT COUNT(*) AS total_read_message FROM contacts_messages WH
                                 <td>
                                     <a href="contact_message_details.php?id=<?= $single_contacts_messages['id'] ?>" class=" btn btn-sm btn-success">View Details</a>
                                     <button value="contact_delete.php?id=<?= $single_contacts_messages['id'] ?>" class="btn btn-sm btn-danger delete_btn">Delete</button>
-                                    <!-- <a href="contact_delete.php?id=<?= $single_contacts_messages['id'] ?>" class=" btn btn-sm btn-danger">Delete</a> -->
                                 </td>
                             </tr>
                         <?php endforeach; ?>

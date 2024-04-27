@@ -82,7 +82,6 @@ require_once "admin/dbc.php";
     </div>
   </nav>
 
-
   <!-- Navbar Mobile -->
   <nav id="navbar-mobile" class="navbar navbar-mobile d-lg-none">
     <ion-icon class="close" name="close-outline"></ion-icon>

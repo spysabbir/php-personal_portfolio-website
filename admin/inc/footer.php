@@ -14,7 +14,6 @@
 </div><!-- sl-mainpanel -->
 <!-- ########## END: MAIN PANEL ########## -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="bootstrap.bundle.min.js"></script>
 <script>
     $(document).ready(function() {
         $('#contact_message_table').DataTable();
@@ -27,7 +26,6 @@
 <script src="lib/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
 <script src="lib/jquery.sparkline.bower/jquery.sparkline.min.js"></script>
 <script src="lib/d3/d3.js"></script>
-<script src="lib/rickshaw/rickshaw.min.js"></script>
 <script src="lib/chart.js/Chart.js"></script>
 <script src="lib/Flot/jquery.flot.js"></script>
 <script src="lib/Flot/jquery.flot.pie.js"></script>
@@ -36,7 +34,6 @@
 <script src="//cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js"></script>
 <script src="js/starlight.js"></script>
 <script src="js/ResizeSensor.js"></script>
-<script src="js/dashboard.js"></script>
 <script src="js/custom.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

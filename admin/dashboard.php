@@ -2,6 +2,11 @@
 $dashboard = true;
 require_once "inc/header.php";
 require_once "dbc.php";
+
+$message_query = "SELECT * FROM contacts_messages ORDER BY id DESC limit 5";
+$databage_result = mysqli_query(connect_to_db(), $message_query);
+
+$count_query1 = mysqli_query(connect_to_db(), "SELECT COUNT(*) AS total_rows FROM contacts_messages");
 ?>
 
 <nav class="breadcrumb sl-breadcrumb">
@@ -25,7 +30,7 @@ require_once "dbc.php";
                 <div class="d-flex align-items-center justify-content-between mg-t-15 bd-t bd-white-2 pd-t-10">
                     <div>
                         <span class="tx-11 tx-white-6">This Year's Order</span>
-                        <h6 class="tx-white mg-b-0">5</h6>
+                        <h6 class="tx-white mg-b-0"><?php $count_query1 ?></h6>
                     </div>
                     <div>
                         <span class="tx-11 tx-white-6">Total Order</span>
@@ -103,111 +108,28 @@ require_once "dbc.php";
     </div><!-- row -->
 
     <div class="row row-sm mg-t-20">
-        <div class="col-xl-8">
-            <div class="card overflow-hidden">
-                <div class="card-header bg-transparent pd-y-20 d-sm-flex align-items-center justify-content-between">
-                    <div class="mg-b-20 mg-sm-b-0">
-                        <h6 class="card-title mg-b-5 tx-13 tx-uppercase tx-bold tx-spacing-1">Profile Statistics</h6>
-                        <span class="d-block tx-12"><?= date("d-M-Y") ?></span>
-                    </div>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="#" class="btn btn-secondary tx-12 active">Today</a>
-                        <a href="#" class="btn btn-secondary tx-12">This Week</a>
-                        <a href="#" class="btn btn-secondary tx-12">This Month</a>
-                    </div>
-                </div><!-- card-header -->
-                <div class="card-body pd-0 bd-color-gray-lighter">
-                    <div class="row no-gutters tx-center">
-                        <div class="col-12 col-sm-4 pd-y-20 tx-left">
-                            <p class="pd-l-20 tx-12 lh-8 mg-b-0">Note: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...</p>
-                        </div><!-- col-4 -->
-                        <div class="col-6 col-sm-2 pd-y-20">
-                            <h4 class="tx-inverse tx-lato tx-bold mg-b-5">6,112</h4>
-                            <p class="tx-11 mg-b-0 tx-uppercase">Views</p>
-                        </div><!-- col-2 -->
-                        <div class="col-6 col-sm-2 pd-y-20 bd-l">
-                            <h4 class="tx-inverse tx-lato tx-bold mg-b-5">102</h4>
-                            <p class="tx-11 mg-b-0 tx-uppercase">Likes</p>
-                        </div><!-- col-2 -->
-                        <div class="col-6 col-sm-2 pd-y-20 bd-l">
-                            <h4 class="tx-inverse tx-lato tx-bold mg-b-5">343</h4>
-                            <p class="tx-11 mg-b-0 tx-uppercase">Comments</p>
-                        </div><!-- col-2 -->
-                        <div class="col-6 col-sm-2 pd-y-20 bd-l">
-                            <h4 class="tx-inverse tx-lato tx-bold mg-b-5">960</h4>
-                            <p class="tx-11 mg-b-0 tx-uppercase">Shares</p>
-                        </div><!-- col-2 -->
-                    </div><!-- row -->
-                </div><!-- card-body -->
-                <div class="card-body pd-0">
-                    <div id="rickshaw2" class="wd-100p ht-200"></div>
-                </div><!-- card-body -->
-            </div><!-- card -->
-
-            <div class="card pd-20 pd-sm-25 mg-t-20">
-                <h6 class="card-body-title tx-13">Horizontal Bar Chart</h6>
-                <p class="mg-b-20 mg-sm-b-30">A bar chart or bar graph is a chart with rectangular bars with lengths proportional to the values that they represent.</p>
-                <canvas id="chartBar4" height="300"></canvas>
-            </div><!-- card -->
-
-        </div><!-- col-8 -->
         <div class="col-xl-4 mg-t-20 mg-xl-t-0">
-
-            <div class="card pd-20 pd-sm-25">
-                <h6 class="card-body-title">Pie Chart</h6>
-                <p class="mg-b-20 mg-sm-b-30">Labels can be hidden if the slice is less than a given percentage of the pie.</p>
-                <div id="flotPie2" class="ht-200 ht-sm-250"></div>
-            </div><!-- card -->
-
             <div class="card widget-messages mg-t-20">
                 <div class="card-header">
                     <span>Messages</span>
-                    <a href=""><i class="icon ion-more"></i></a>
                 </div><!-- card-header -->
                 <div class="list-group list-group-flush">
-                    <a href="" class="list-group-item list-group-item-action media">
-                        <img src="img/img10.jpg" alt="">
+                    <?php
+                    foreach (spy_sabbir_all('contacts_messages') as $single_contacts_messages) :
+                    ?>
+                    <a href="contact_message_details.php?id=<?= $single_contacts_messages['id'] ?>" class="list-group-item list-group-item-action media <?= ($single_contacts_messages['status'] == 'unread') ? "bg-dark" : "bg-light" ?> ">
                         <div class="media-body">
-                            <div class="msg-top">
-                                <span>Mienard B. Lumaad</span>
-                                <span>4:09am</span>
+                            <div class="msg-top" >
+                                <span class="<?= ($single_contacts_messages['status'] == 'unread') ? "text-light" : "text-dark" ?>"><?= ucwords(strtolower($single_contacts_messages["client_full_name"])) ?></span>
+                                <span class="<?= ($single_contacts_messages['status'] == 'unread') ? "text-light" : "text-dark" ?>"><?= date("d-M-Y h:i:sa", strtotime($single_contacts_messages['message_send_time'])); ?></span>
                             </div>
-                            <p class="msg-summary">Many desktop publishing packages and web page editors now use...</p>
+                            <p class="msg-summary"><?= substr($single_contacts_messages['client_message'], 0, 100) ?> ...</p>
                         </div><!-- media-body -->
                     </a><!-- list-group-item -->
-                    <a href="" class="list-group-item list-group-item-action media">
-                        <img src="img/img9.jpg" alt="">
-                        <div class="media-body">
-                            <div class="msg-top">
-                                <span>Isidore Dilao</span>
-                                <span>Yesterday 3:00am</span>
-                            </div>
-                            <p class="msg-summary">On the other hand, we denounce with righteous indignation and dislike...</p>
-                        </div><!-- media-body -->
-                    </a><!-- list-group-item -->
-                    <a href="" class="list-group-item list-group-item-action media">
-                        <img src="img/img8.jpg" alt="">
-                        <div class="media-body">
-                            <div class="msg-top">
-                                <span>Kirby Avendula</span>
-                                <span>Yesterday 3:00am</span>
-                            </div>
-                            <p class="msg-summary">It is a long established fact that a reader will be distracted by the readable...</p>
-                        </div><!-- media-body -->
-                    </a><!-- list-group-item -->
-                    <a href="" class="list-group-item list-group-item-action media">
-                        <img src="img/img7.jpg" alt="">
-                        <div class="media-body">
-                            <div class="msg-top">
-                                <span>Roven Galeon</span>
-                                <span>Yesterday 3:00am</span>
-                            </div>
-                            <p class="msg-summary">Than the fact that climate change may be causing it to rapidly disappear... </p>
-                        </div><!-- media-body -->
-                    </a><!-- list-group-item -->
+                    <?php endforeach; ?>
                 </div><!-- list-group -->
                 <div class="card-footer">
-                    <a href="" class="tx-12"><i class="fa fa-angle-down mg-r-3"></i> Load more messages</a>
+                    <a href="contact.php" class="tx-12"><i class="fa fa-angle-down mg-r-3"></i> All messages</a>
                 </div><!-- card-footer -->
             </div><!-- card -->
         </div><!-- col-3 -->
