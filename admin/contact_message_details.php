@@ -22,8 +22,6 @@ $single_contacts_messages = mysqli_fetch_assoc(mysqli_query(connect_to_db(), $se
 
     <div class="sl-page-title mt-5">
         <h5>Message Details</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">

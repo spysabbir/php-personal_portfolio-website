@@ -13,13 +13,10 @@ require_once "dbc.php";
 <div class="sl-pagebody">
     <div class="sl-page-title">
         <h5>Skill Add Layouts</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">
         <h6 class="card-body-title">Skill Add Layout</h6>
-        <p class="mg-b-20 mg-sm-b-30">A form with a label on top of each form control.</p>
 
         <form method="POST" action="skill_post.php">
             <div class="form-layout">

@@ -19,15 +19,11 @@ $count_query2 = "SELECT COUNT(*) AS total_read_message FROM contacts_messages WH
 <div class="sl-pagebody">
 
     <div class="sl-page-title mt-5">
-        <h5>Contact Message List</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">
         <h6 class="card-body-title">Contact Message List</h6>
-        <p class="mg-b-20 mg-sm-b-30">A form with a label on top of each form control.</p>
-        <div class="card text-start|center|end">
+        <div class="card text-start">
             <div class="card-header">
                 <h4 class="card-title">All Messages (Total:<?= mysqli_num_rows($databage_result) ?>, Unread: <?= mysqli_fetch_assoc(mysqli_query(connect_to_db(), $count_query1))['total_unread_message'] ?> Read: <?= mysqli_fetch_assoc(mysqli_query(connect_to_db(), $count_query2))['total_read_message'] ?>)</h4>
             </div>

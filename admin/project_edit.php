@@ -14,13 +14,10 @@ require_once "dbc.php";
 <div class="sl-pagebody">
     <div class="sl-page-title">
         <h5>Edit Project Layouts</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">
         <h6 class="card-body-title">Edit Project Layout</h6>
-        <p class="mg-b-20 mg-sm-b-30">A form with a label on top of each form control.</p>
 
         <form method="POST" action="project_edit_post.php" enctype="multipart/form-data" id="edit_form">
             <div class="form-layout">
@@ -64,17 +61,11 @@ require_once "dbc.php";
                             <div class="col-lg-6">
                                 <div class="form-group">
                                 <input type="hidden" name="project_id" class="form-control" value="<?= $_GET['id'] ?>">
-                                    <label class="form-control-label">Project Old Cover Photo: <span class="tx-danger">*</span></label>
                                     <input type="hidden" name="project_old_photo_name" class="form-control" value="<?= spy_sabbir_single_select('projects', $_GET['id'])['project_cover_photo'] ?>">
-                                    <img class="w-100 img-fluid img-thumbnail" src="../img/portfolio/<?= spy_sabbir_single_select('projects', $_GET['id'])['project_cover_photo'] ?>" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
                                     <label class="form-control-label">Project New Cover Photo: <span class="tx-danger">*</span></label>
                                     <input class="form-control mb-2" type="file" name="project_new_cover_photo" onchange="readURL(this);">
                                     <small>Photo Size 1140*641 px</small><br>
-                                    <img class="hidden w-100 img-fluid img-thumbnail" id="project_new_cover_photo" src="#" alt="Project New Cover Photo" />
+                                    <img class="hidden w-100 img-fluid img-thumbnail" id="project_new_cover_photo" src="../img/portfolio/<?= spy_sabbir_single_select('projects', $_GET['id'])['project_cover_photo'] ?>" alt="Project New Cover Photo" />
                                     <script>
                                         function readURL(input) {
                                             if (input.files && input.files[0]) {

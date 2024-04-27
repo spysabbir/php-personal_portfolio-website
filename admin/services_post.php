@@ -28,7 +28,6 @@ if (!$_FILES['service_photo']['name']) {
     $_SESSION['old_service_photo'] = $_FILES['service_photo']['name'];
 }
 
-// echo $_SESSION['old_service_photo'];
 
 if($submit_ability){
     // Photo Upload Start

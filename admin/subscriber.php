@@ -17,13 +17,10 @@ $databage_result = mysqli_query(connect_to_db(), $select_query);
 
     <div class="sl-page-title mt-5">
         <h5>Subscriber List</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">
         <h6 class="card-body-title">Subscriber List</h6>
-        <p class="mg-b-20 mg-sm-b-30">A form with a label on top of each form control.</p>
         <div class="card text-start|center|end">
             <div class="card-header">
                 <h4 class="card-title">All Subscriber (Total:<?= mysqli_num_rows($databage_result) ?>)</h4>

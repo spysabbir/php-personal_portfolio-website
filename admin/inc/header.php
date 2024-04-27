@@ -14,10 +14,6 @@ if (!isset($_SESSION['login_status'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Meta -->
-    <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
-    <meta name="author" content="ThemePixels">
-
     <title><?= spy_sabbir_update('theme_default', 'owner_name'); ?> | Admin</title>
 
     <!-- vendor css -->
@@ -36,12 +32,6 @@ if (!isset($_SESSION['login_status'])) {
     <!-- ########## START: LEFT PANEL ########## -->
     <div class="sl-logo"><a href="dashboard.php"><i class="icon ion-android-star-outline"></i> <?= spy_sabbir_update('theme_default', 'owner_name'); ?></a></div>
     <div class="sl-sideleft">
-        <div class="input-group input-group-search">
-            <input type="search" name="search" class="form-control" placeholder="Search">
-            <span class="input-group-btn">
-                <button class="btn"><i class="fa fa-search"></i></button>
-            </span>
-        </div>
 
         <label class="sidebar-label">Navigation</label>
         <div class="sl-sideleft-menu">

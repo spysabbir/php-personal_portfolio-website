@@ -5,7 +5,6 @@ require_once "dbc.php";
 
 ?>
 
-
 <nav class="breadcrumb sl-breadcrumb">
     <a class="breadcrumb-item" href="dashboard.php">Dashboard</a>
     <span class="breadcrumb-item active">Theme Default</span>
@@ -15,13 +14,10 @@ require_once "dbc.php";
 
     <div class="sl-page-title">
         <h5>Default Content Update Layouts</h5>
-        <p>Forms are used to collect user information with different element types of input, select, checkboxes,
-            radios and more.</p>
     </div><!-- sl-page-title -->
 
     <div class="card pd-20 pd-sm-40">
         <h6 class="card-body-title">Default Content Update Layout</h6>
-        <p class="mg-b-20 mg-sm-b-30">A form with a label on top of each form control.</p>
 
         <form method="POST" action="theme_default_update.php" enctype="multipart/form-data" id="edit_form">
             <div class="form-layout">
@@ -98,20 +94,13 @@ require_once "dbc.php";
                 </div>
 
                 <div class="row">
-                    <!-- <div class="col-lg-6">
-                        <div class="form-group">
-                            <label class="form-control-label">Banner Old Photo: <span class="tx-danger">*</span></label>
-                            <input type="hidden" name="banner_old_photo" class="form-control" value="<?= spy_sabbir_update('theme_default', 'banner_photo'); ?>">
-                            <img class="w-100 img-fluid" src="../img/bg/<?= spy_sabbir_update('theme_default', 'banner_photo'); ?>" alt="">
-                        </div>
-                    </div> -->
                     <div class="col-lg-5">
                         <div class="form-group">
                             <input type="hidden" name="banner_old_photo" class="form-control" value="<?= spy_sabbir_update('theme_default', 'banner_photo'); ?>">
                             <label class="form-control-label">Banner New Photo: <span class="tx-danger">*</span></label>
                             <input class="form-control" type="file" name="banner_new_photo" onchange="readURL(this);">
                             <small>Photo Size 1920*1080 px</small><br>
-                            <img class="hidden w-100 img-fluid img-thumbnail" id="banner_new_photo" src="#" alt="Banner New Photo" />
+                            <img class="hidden w-100 img-fluid img-thumbnail" id="banner_new_photo" src="../img/bg/<?= spy_sabbir_update('theme_default', 'banner_photo'); ?>" alt="Banner New Photo" />
                             <script>
                                 function readURL(input) {
                                     if (input.files && input.files[0]) {
