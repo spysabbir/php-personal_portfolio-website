@@ -1,6 +1,6 @@
 <footer class="sl-footer">
     <div class="footer-left">
-        <div class="mg-b-2">Copyright &copy; 2010 - <?= date("Y") ?>. <?= spy_sabbir_update('theme_default', 'owner_name'); ?>. All Rights Reserved.</div>
+        <div class="mg-b-2">Copyright &copy; <?= date("Y") ?>. <?= spy_sabbir_update('theme_default', 'owner_name'); ?>. All Rights Reserved.</div>
         <div>Made by <?= spy_sabbir_update('theme_default', 'owner_name'); ?></div>
     </div>
     <div class="footer-right d-flex align-items-center">

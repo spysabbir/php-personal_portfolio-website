@@ -111,7 +111,7 @@ if (!isset($_SESSION['login_status'])) {
             <a href="contact.php" class="sl-menu-link <?= (isset($contact)) ? 'active' : '' ?>">
                 <div class="sl-menu-item">
                     <i class="fa fa-envelope tx-20" aria-hidden="true"></i>
-                    <span class="menu-item-label">Client Messages</span>
+                    <span class="menu-item-label">Contact Messages</span>
                 </div><!-- menu-item -->
             </a><!-- sl-menu-link -->
 

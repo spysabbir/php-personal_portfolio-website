@@ -29,7 +29,7 @@
          </div>
          <div class="col-md-6 col-lg-3">
            <h6 class="text-white mb-4">Subscribe:</h6>
-           <form method="POST" action="subscribe_post.php">
+           <form method="POST" action="subscriber_post.php">
              <div class="input-group">
                <input type="email" class="form-control" name="subscriber_email" placeholder="Email" value="<?= (isset($_SESSION['old_email'])) ? $_SESSION['old_email'] : '' ?>">
                <div class="input-group-append">

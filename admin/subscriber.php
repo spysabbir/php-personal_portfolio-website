@@ -3,7 +3,7 @@ $subscriber = true;
 require_once "inc/header.php";
 require_once "dbc.php";
 
-$select_query = "SELECT * FROM subscribes ORDER BY id DESC";
+$select_query = "SELECT * FROM subscribers ORDER BY id DESC";
 $databage_result = mysqli_query(connect_to_db(), $select_query);
 
 ?>
@@ -37,12 +37,12 @@ $databage_result = mysqli_query(connect_to_db(), $select_query);
                     <tbody>
                         <?php
                         $srial_no = 1;
-                        foreach (spy_sabbir_all('subscribes') as $single_subscribes) :
+                        foreach (spy_sabbir_all('subscribers') as $single_subscriber) :
                         ?>
                             <tr>
                                 <td><?= $srial_no++ ?></td>
-                                <td><?= strtolower($single_subscribes["subscriber_email"]) ?></td>
-                                <td><?= date("d-M-Y h:i:sa", strtotime($single_subscribes['subscribe_date'])); ?></td>
+                                <td><?= strtolower($single_subscriber["subscriber_email"]) ?></td>
+                                <td><?= date("d-M-Y h:i:sa", strtotime($single_subscriber['subscribe_date'])); ?></td>
                             </tr>
                         <?php endforeach; ?>
                     </tbody>
