@@ -12,6 +12,9 @@ require_once "admin/dbc.php";
   <meta name="description" content="<?= spy_sabbir_update('theme_default', 'owner_name'); ?>. - Easy Onepage Personal Template">
   <meta name="author" content="<?= spy_sabbir_update('theme_default', 'owner_name'); ?>">
 
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.png" type="image/png">
+
   <!-- CSS -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -119,6 +122,6 @@ require_once "admin/dbc.php";
 
     </ul>
     <div class="navbar-mobile-footer">
-      <p>© 2020 - <?= date("Y") ?> <?= spy_sabbir_update('theme_default', 'owner_name'); ?>. All Rights Reserved.</p>
+      <p>© <?= date("Y") ?> <?= spy_sabbir_update('theme_default', 'owner_name'); ?>. All Rights Reserved.</p>
     </div>
   </nav>
