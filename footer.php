@@ -64,8 +64,14 @@
 
   <script>
     $(document).ready(function() {
+      // Subscription form
       $('#subscribe_button').click(function() {
         var email = $('#subscriber_email').val().trim();
+
+        if (email === '') {
+          $('#subscription_message').removeClass('text-success').addClass('text-danger').text('Email cannot be blank.');
+        }
+
         $.ajax({
           type: 'POST',
           url: 'subscriber_post.php',
@@ -81,6 +87,44 @@
           },
         });
       });
+
+      // Contact form
+      $('#contact_button').click(function() {
+        var client_full_name = $('#client_full_name').val().trim();
+        var client_email_address = $('#client_email_address').val().trim();
+        var client_message = $('#client_message').val().trim();
+        
+        $('.error-message').text('');
+        $('#contact_message').text('');
+
+        if (client_full_name === '') {
+            $('#client_full_name_error').text('Full name is required!');
+        }
+        if (client_email_address === '') {
+            $('#client_email_address_error').text('Email address is required!');
+        }
+        if (client_message === '') {
+            $('#client_message_error').text('Message is required!');
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: 'contact_post.php',
+            data: { client_full_name: client_full_name, client_email_address: client_email_address, client_message: client_message },
+            success: function(response) {
+                var data = JSON.parse(response);
+                if (data.success) {
+                    $('#contact_message').removeClass('text-danger').addClass('text-success').text('Message sent successful!');
+                    $('#client_full_name').val('');
+                    $('#client_email_address').val('');
+                    $('#client_message').val('');
+                } else {
+                    $('#contact_message').removeClass('text-success').addClass('text-danger').text(data.error);
+                }
+            },
+        });
+      });
+
     });
   </script>
 

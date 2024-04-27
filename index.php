@@ -28,40 +28,24 @@ require_once 'header.php';
         </button>
       </div>
       <div class="modal-body">
-        <p>Leave your contacts and our managers
-          will contact you soon.</p>
+        <p id="contact_message" class="ml-2"></p>
+        <p>Leave your contacts and our managers will contact you soon.</p>
         <form method="POST" action="contact_post.php">
-          <div class="form-group">
-            <input type="text" name="client_full_name" class="form-control" placeholder="Full Name" value="<?= (isset($_SESSION['old_name'])) ? $_SESSION['old_name'] : '' ?>">
-            <?php if (isset($_SESSION['name_error'])) : ?>
-              <small class="text-danger"><?= $_SESSION['name_error'] ?></small>
-            <?php 
-              endif; 
-              unset($_SESSION['name_error']);
-            ?>
-          </div>
-          <div class="form-group">
-            <input type="email" name="client_email_address" class="form-control" placeholder="Email" value="<?= (isset($_SESSION['old_email'])) ? $_SESSION['old_email'] : '' ?>">
-            <?php if (isset($_SESSION['email_error'])) : ?>
-              <small class="text-danger"><?= $_SESSION['email_error'] ?></small>
-            <?php 
-              endif; 
-              unset($_SESSION['email_error']);
-            ?>
-          </div>
-          <div class="form-group">
-            <textarea rows="3" name="client_message" class="form-control" placeholder="Message"><?= (isset($_SESSION['old_message'])) ? $_SESSION['old_message'] : '' ?></textarea>
-            <?php if (isset($_SESSION['message_error'])) : ?>
-              <small class="text-danger"><?= $_SESSION['message_error'] ?></small>
-            <?php 
-              endif; 
-              unset($_SESSION['message_error']);
-            ?>
-          </div>
-
-          <div class="form-group mb-0 text-right">
-            <button type="submit" class="btn">Submit</button>
-          </div>
+            <div class="form-group">
+                <input type="text" name="client_full_name" id="client_full_name" class="form-control" placeholder="Full Name" value="">
+                <p id="client_full_name_error" class="error-message text-danger"></p>
+            </div>
+            <div class="form-group">
+                <input type="email" name="client_email_address" id="client_email_address" class="form-control" placeholder="Email" value="">
+                <p id="client_email_address_error" class="error-message text-danger"></p>
+            </div>
+            <div class="form-group">
+                <textarea rows="3" name="client_message" id="client_message" class="form-control" placeholder="Message"></textarea>
+                <p id="client_message_error" class="error-message text-danger"></p>
+            </div>
+            <div class="form-group mb-0 text-right">
+                <button type="button" id="contact_button" class="btn">Submit</button>
+            </div>
         </form>
       </div>
     </div>
