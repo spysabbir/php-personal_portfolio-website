@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 23, 2023 at 08:48 AM
+-- Generation Time: Apr 27, 2024 at 01:50 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `portfolio_project_one`
+-- Database: `personal_portfolio-website`
 --
 
 -- --------------------------------------------------------
@@ -109,7 +109,7 @@ CREATE TABLE `news` (
 --
 
 INSERT INTO `news` (`id`, `news_headline`, `news_details`, `news_cover_photo`, `news_uploaded_date_time`) VALUES
-(2, '10 Ways to Discover if Freelancing is for You.', '      Freelancing is a popular career choice for many people, especially those with an entrepreneurial spirit and a desire to escape a boring 9-to-5 office job. Yet while a freelancing career can be liberating in many ways, itï¿½s also a very difficult route to take. Not everyone is suited to this way of working.\r\n\r\nThere are a number of character traits and natural tendencies you need in order to succeed as a freelance professional. If you donï¿½t have at least some of these characteristics, then youï¿½ll soon find working for your own clients is even more grueling than working for a boss.\r\n\r\nBeing self-employed and growing your own business is a lot harder than people imagine. A lot of people try freelancing but end up returning to a more traditional job after a year or two. In most cases, this is because they were not really suited to a freelance way of working in the first place.\r\n\r\nSo how can you tell whether youï¿½ll love freelancing or soon find it an anxiety-inducing struggle?', '13982327741631639012.jpg', '2021-08-31 21:46:03'),
+(2, '10 Ways to Discover if Freelancing is for You.', '      Freelancing is a popular career choice for many people, especially those with an entrepreneurial spirit and a desire to escape a boring 9-to-5 office job. Yet while a freelancing career can be liberating in many ways, itï¿½s also a very difficult route to take. Not everyone is suited to this way of working.\r\n\r\nThere are a number of character traits and natural tendencies you need in order to succeed as a freelance professional. If you donï¿½t have at least some of these characteristics, then youï¿½ll soon find working for your own clients is even more grueling than working for a boss.\r\n\r\nBeing self-employed and growing your own business is a lot harder than people imagine. A lot of people try freelancing but end up returning to a more traditional job after a year or two. In most cases, this is because they were not really suited to a freelance way of working in the first place.\r\n\r\nSo how can you tell whether youï¿½ll love freelancing or soon find it an anxiety-inducing struggle?', '4485751681632483673.jpg', '2021-08-31 21:46:03'),
 (3, 'How To Become A Successful Freelancer!', 'So you’re reading this because you want to become a freelancer. You’ve thought about what you want to freelance in, you’ve got a couple of useful email addresses and you’ve even bought yourself some sweatpants that will look great with your slippers.\r\n\r\nSo you’re ready to dump that job and get cracking on your first assignment, right?\r\n\r\nWrong.\r\n\r\nOne of the biggest misconceptions about freelancing is that you sit at home and work comes to you. When the reality is you have to fight for it, and fight hard.\r\n\r\nAs our friend Leif Kendall aptly put it:\r\n\r\n“First: you must strive. Nothing good is ever easy.”\r\n\r\nI hate to break it to you, but working freelance means working. And I mean really working. Unlike your 9-5 cubicle, there is nothing cushy about freelancing, nothing stable about it until YOU have made it that way.\r\n\r\nBut there are some simple secrets to becoming a successful freelancer which I am going to share with you in this blog post. Here they are in brief—feel free to select one to jump straight to it, or read on for the full story.\r\n\r\nContact everyone you know.\r\nWork on your personal brand.\r\nWrite a plan of action.\r\nDo your research and pay attention to competition.\r\nGet yourself a mentor—and your first client.', '15407827111630424793.jpg', '2021-08-31 21:46:33'),
 (4, 'How to Start Freelancing in 9 Steps!', ' With remote work on the rise, more people than ever want to become a freelancer or start freelancing. Which begs the next obvious question…HOW to start freelancing? Thankfully, it’s easier to become a freelancer than ever before. More than 57 million Americans freelanced in 2019, and the trend continues to grow with more than 50% of Gen Z opting to start freelancing. Not only is it more popular to become a freelancer than ever before, but companies are getting more and more comfortable hiring freelancers rather than full-time employees. A lot of jobs can be done remotely, and companies don’t need to provide the same financial or healthcare benefits to freelancers as they do to full-time employees. So maybe it’s time for YOU to become self-employed and start a freelancing business.\r\n\r\nWith remote work on the rise, more people than ever want to become a freelancer or start freelancing. Which begs the next obvious question…HOW to start freelancing? Thankfully, it’s easier to become a freelancer than ever before. More than 57 million Americans freelanced in 2019, and the trend continues to grow with more than 50% of Gen Z opting to start freelancing. Not only is it more popular to become a freelancer than ever before, but companies are getting more and more comfortable hiring freelancers rather than full-time employees. A lot of jobs can be done remotely, and companies don’t need to provide the same financial or healthcare benefits to freelancers as they do to full-time employees. So maybe it’s time for YOU to become self-employed and start a freelancing business.', '20195373871630425582.jpg', '2021-08-31 21:59:42'),
 (19, 'What is Web Design?', ' Web design refers to the design of websites that are displayed on the internet. It usually refers to the user experience aspects of website development rather than software development. Web design used to be focused on designing websites for desktop browsers; however, since the mid-2010s, design for mobile and tablet browsers has become ever-increasingly important.\r\n\r\nA web designer works on the appearance, layout, and, in some cases, content of a website. Appearance, for instance, relates to the colors, font, and images used. Layout refers to how information is structured and categorized. A good web design is easy to use, aesthetically pleasing and suits the user group and brand of the website. Many web pages are designed with a focus on simplicity so that no extraneous information and functionality that might distract or confuse users appears. As the keystone of a web designer’s output is a site that wins and fosters the trust of the target audience, removing as many potential points of user frustration as possible is a critical consideration.\r\n\r\nTwo of the most common methods for designing websites that work well both on desktop and mobile are responsive and adaptive design. In responsive design, content moves dynamically depending on screen size; in adaptive design, the website content is fixed in layout sizes that match common screen sizes. Preserving a layout that is as consistent as possible between devices is crucial to maintaining user trust and engagement. As responsive design can present difficulties in this regard, designers must be careful in relinquishing control of how their work will appear. If they are responsible for the content as well, while they may need to broaden their skill set, they will enjoy having the advantage of full control of the finished product.', '8139589791632127312.jpg', '2021-09-07 09:03:30'),
@@ -163,7 +163,7 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `service_icon_name`, `service_name`, `service_photo`, `service_details`) VALUES
-(13, 'fa-leaf', 'Graphic Design', '9960518641631677178.jpg', 'The main purpose here is to make you able to use graphic design tools and techniques in a professional way. Graphic Design helps to build the brand identity of a company.'),
+(13, 'fa-leaf', 'Graphic Design', '185537941632474102.jpg', 'The main purpose here is to make you able to use graphic design tools and techniques in a professional way. Graphic Design helps to build the brand identity of a company.'),
 (14, 'fa-file-code-o', 'Web Design', '18262421771630925026.jpg', 'Web design means creating websites with a user-friendly structure and with an aesthetic approach. Web designers always think about the layout, color scheme, and unique design of a website. But their task does not just end there.	'),
 (15, 'fa-database', 'Web Development', '12211578431631351940.jpg', 'Web Development consists of two segments front-end development and backend development. Front-end Developers work with visual designs of a website and build the sites using code.'),
 (16, 'fa-bullhorn', 'Digital Marketing', '13602364051630925157.jpg', 'At a high level, digital marketing refers to advertising delivered through digital channels such as search engines, websites, social media, email, and mobile apps. Using these online media channels, digital marketing is the method by which companies endorse goods, services, and brands.');
@@ -193,20 +193,20 @@ INSERT INTO `skills` (`id`, `skill_name`, `percentage`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `subscribes`
+-- Table structure for table `subscribers`
 --
 
-CREATE TABLE `subscribes` (
+CREATE TABLE `subscribers` (
   `id` int(11) NOT NULL,
   `subscriber_email` varchar(100) NOT NULL,
   `subscribe_date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `subscribes`
+-- Dumping data for table `subscribers`
 --
 
-INSERT INTO `subscribes` (`id`, `subscriber_email`, `subscribe_date`) VALUES
+INSERT INTO `subscribers` (`id`, `subscriber_email`, `subscribe_date`) VALUES
 (1, 'spysabbir@spyitfirm.com', '2021-09-15 14:31:29'),
 (2, 'spysabbirr@spyitfirm.com', '2021-09-15 14:34:30'),
 (5, 'spysabbirrv@spryitfirm.com', '2021-09-15 14:49:13'),
@@ -214,7 +214,10 @@ INSERT INTO `subscribes` (`id`, `subscriber_email`, `subscribe_date`) VALUES
 (7, 'sabbir@live.com', '2021-09-17 13:57:40'),
 (9, 'sabbirsovon@gmail.com', '2021-09-17 14:12:06'),
 (11, 'sabbir420@gmail.com', '2021-09-17 14:21:14'),
-(12, 'dmxsabbir@gmail.com', '2021-09-17 15:40:08');
+(12, 'dmxsabbir@gmail.com', '2021-09-17 15:40:08'),
+(14, 'sabbir15@gmail.com', '2024-04-27 16:40:49'),
+(15, 'sabbir16@gmail.com', '2024-04-27 16:43:36'),
+(16, 'sabbir18@gmail.com', '2024-04-27 16:44:15');
 
 -- --------------------------------------------------------
 
@@ -257,10 +260,10 @@ CREATE TABLE `theme_default` (
 
 INSERT INTO `theme_default` (`id`, `default_item_name`, `default_item_value`) VALUES
 (1, 'owner_name', 'Spy Sabbir'),
-(2, 'owner_email_address', 'spysabbir@spyitfirm.com'),
+(2, 'owner_email_address', 'spysabbir@spysabbir.com'),
 (5, 'owner_phone_number', '+8801953321402'),
 (6, 'owner_about_details', 'I am an experienced freelancer. I believe in providing professional work as soon as possible. I can do every work related to Graphic Design, Web Design, Web Development and  Digital Marketing.'),
-(7, 'years_of_experience', '5'),
+(7, 'years_of_experience', '3'),
 (8, 'primary_background_color', '#1f1f1f'),
 (9, 'facebook_link', 'https://www.facebook.com/spysabbirahammed/'),
 (10, 'twitter_link', 'https://twitter.com/spysabbir'),
@@ -268,7 +271,7 @@ INSERT INTO `theme_default` (`id`, `default_item_name`, `default_item_value`) VA
 (12, 'linkedin_link', 'https://www.linkedin.com/in/spysabbir/'),
 (13, 'banner_photo', '1294089981632114620.jpg'),
 (14, 'experience_details', 'I am an experienced freelancer. I believe in providing professional work as soon as possible. I can do every work related to Graphic Design, Web Design, Web Development and Digital Marketing. I am available 24/7 online so feel free to hire me if you have any work.'),
-(15, 'upload_cv', '12014904151631885891.doc');
+(15, 'upload_cv', 'cv.pdf');
 
 -- --------------------------------------------------------
 
@@ -343,9 +346,9 @@ ALTER TABLE `skills`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `subscribes`
+-- Indexes for table `subscribers`
 --
-ALTER TABLE `subscribes`
+ALTER TABLE `subscribers`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -381,7 +384,7 @@ ALTER TABLE `clients`
 -- AUTO_INCREMENT for table `contacts_messages`
 --
 ALTER TABLE `contacts_messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `experiences`
@@ -414,10 +417,10 @@ ALTER TABLE `skills`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `subscribes`
+-- AUTO_INCREMENT for table `subscribers`
 --
-ALTER TABLE `subscribes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+ALTER TABLE `subscribers`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `testimonials`
