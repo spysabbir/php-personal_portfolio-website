@@ -45,7 +45,7 @@ require_once "admin/dbc.php";
       <!-- Brand-->
       <a class="navbar-brand" href="index.php"><?= spy_sabbir_update('theme_default', 'owner_name'); ?>.</a>
       <ul class="navbar-nav-desctop mr-auto d-none d-lg-block">
-        <?php if($_SERVER['REQUEST_URI'] == "/index.php"){  ?>
+        <?php if($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php"){  ?>
           <li><a class="nav-link" href="#home">Home</a></li>
           <li><a class="nav-link" href="#about">About</a></li>
           <li><a class="nav-link" href="#services">Services</a></li>
@@ -106,7 +106,7 @@ require_once "admin/dbc.php";
     </ul>
 
     <ul class="navbar-nav navbar-nav-mobile">
-      <?php if($_SERVER['REQUEST_URI'] == "/index.php"){  ?>
+      <?php if($_SERVER['REQUEST_URI'] == "/" || $_SERVER['REQUEST_URI'] == "/index.php"){  ?>
         <li><a class="nav-link" href="#home">Home</a></li>
         <li><a class="nav-link" href="#about">About</a></li>
         <li><a class="nav-link" href="#services">Services</a></li>

@@ -5,7 +5,7 @@ function connect_to_db(){
 $hostname = "localhost";
 $username = "root"; 
 $password = "";
-$database_name = "portfolio";
+$database_name = "personal_portfolio-website";
 return $db_connect = mysqli_connect($hostname, $username, $password, $database_name);
 }
 

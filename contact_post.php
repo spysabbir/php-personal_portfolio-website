@@ -17,3 +17,5 @@ if (!$client_full_name || !$client_email_address || !$client_message) {
 
     echo json_encode(array('success' => true));
 }
+
+?>

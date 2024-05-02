@@ -28,20 +28,20 @@ require_once 'header.php';
         </button>
       </div>
       <div class="modal-body">
-        <p id="contact_message" class="ml-2"></p>
+        <strong id="contact_message" class="ml-2"></strong>
         <p>Leave your contacts and our managers will contact you soon.</p>
         <form method="POST" action="contact_post.php">
             <div class="form-group">
                 <input type="text" name="client_full_name" id="client_full_name" class="form-control" placeholder="Full Name" value="">
-                <p id="client_full_name_error" class="error-message text-danger"></p>
+                <strong id="client_full_name_error" class="error-message text-danger"></strong>
             </div>
             <div class="form-group">
                 <input type="email" name="client_email_address" id="client_email_address" class="form-control" placeholder="Email" value="">
-                <p id="client_email_address_error" class="error-message text-danger"></p>
+                <strong id="client_email_address_error" class="error-message text-danger"></strong>
             </div>
             <div class="form-group">
                 <textarea rows="3" name="client_message" id="client_message" class="form-control" placeholder="Message"></textarea>
-                <p id="client_message_error" class="error-message text-danger"></p>
+                <strong id="client_message_error" class="error-message text-danger"></strong>
             </div>
             <div class="form-group mb-0 text-right">
                 <button type="button" id="contact_button" class="btn">Submit</button>
