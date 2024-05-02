@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2024 at 07:47 AM
+-- Generation Time: May 02, 2024 at 08:25 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -283,7 +283,6 @@ INSERT INTO `theme_default` (`id`, `default_item_name`, `default_item_value`) VA
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `full_name` varchar(100) NOT NULL,
-  `designation` varchar(200) NOT NULL DEFAULT 'user',
   `email_address` varchar(100) NOT NULL,
   `phone_number` text NOT NULL,
   `gender` varchar(10) NOT NULL,
@@ -297,8 +296,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `full_name`, `designation`, `email_address`, `phone_number`, `gender`, `date_of_birth`, `password`, `profile_photo`, `created_at`) VALUES
-(27, 'Md Sabbir Ahammed', 'admin', 'admin@email.com', '01953321402', 'male', '1999-10-09', '25d55ad283aa400af464c76d713c07ad', '1270737621714628040.png', '2021-09-01 21:21:38');
+INSERT INTO `users` (`id`, `full_name`, `email_address`, `phone_number`, `gender`, `date_of_birth`, `password`, `profile_photo`, `created_at`) VALUES
+(27, 'Md Sabbir Ahammed', 'admin@email.com', '01953321402', 'male', '1999-10-09', '25d55ad283aa400af464c76d713c07ad', '1270737621714628040.png', '2021-09-01 21:21:38');
 
 --
 -- Indexes for dumped tables

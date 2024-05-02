@@ -17,7 +17,7 @@ if (!$_POST['customer_details']) {
     $_SESSION['old_customer_details'] = $_POST['customer_details'];
 }
 if (!$_POST['testimonials_details']) {
-    $_SESSION['testimonials_details_error'] = "Please fill up your designation";
+    $_SESSION['testimonials_details_error'] = "Please fill up your testimonials details";
     $submit_ability = false;
 } else {
     $_SESSION['old_testimonials_details'] = $_POST['testimonials_details'];

@@ -54,16 +54,6 @@ require_once "dbc.php";
                                     <input class="form-control" type="text" name="user_name" value="<?= spy_sabbir_single_select('users', $_SESSION['user_id'])['full_name'] ?>">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <label class="form-control-label">Designation: <span class="tx-danger">*</span></label>
-                                    <select name="user_designation" class="form-control custom-select">
-                                        <option value="admin" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['designation'] == 'admin' ? 'selected' : '' ?>>Admin</option>
-                                        <option value="developer" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['designation'] == 'developer' ? 'selected' : '' ?>>Developer</option>
-                                        <option value="user" <?= spy_sabbir_single_select('users', $_SESSION['user_id'])['designation'] == 'user' ? 'selected' : '' ?>>User</option>
-                                    </select>
-                                </div>
-                            </div>
                             <!-- col-6 -->
                             <div class="col-lg-6">
                                 <div class="form-group mg-b-10-force">

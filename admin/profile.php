@@ -33,10 +33,6 @@ require_once "dbc.php";
                                 <td><?= spy_sabbir_single_select('users', $_SESSION['user_id'])['full_name'] ?></td>
                             </tr>
                             <tr>
-                                <td>Designation:</td>
-                                <td><?= ucfirst(spy_sabbir_single_select('users', $_SESSION['user_id'])['designation']) ?></td>
-                            </tr>
-                            <tr>
                                 <td>Email Address:</td>
                                 <td><?= spy_sabbir_single_select('users', $_SESSION['user_id'])['email_address'] ?></td>
                             </tr>

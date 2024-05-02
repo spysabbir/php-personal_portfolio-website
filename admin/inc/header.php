@@ -140,7 +140,6 @@ if (!isset($_SESSION['login_status'])) {
         <div class="sl-header-right">
             <div class="text-right mr-2">
                 <span class="logged-name"><?= spy_sabbir_single_select('users', $_SESSION['user_id'])['full_name'] ?></span> <br>
-                <span class="logged-name"><?= ucfirst(spy_sabbir_single_select('users', $_SESSION['user_id'])['designation']) ?></span>
             </div>
             <img src="img/users/<?= spy_sabbir_single_select('users', $_SESSION['user_id'])['profile_photo'] ?>" class="wd-32 rounded-circle img-thumbnail" alt="">
             <nav class="nav mr-4">
