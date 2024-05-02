@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2024 at 01:50 PM
+-- Generation Time: May 02, 2024 at 07:47 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -240,7 +240,8 @@ INSERT INTO `testimonials` (`id`, `customer_name`, `customer_details`, `testimon
 (2, 'latoya603', 'CEO OF........ (United States)', 'He was very knowledgeable and very thorough with his work. I am very happy with the quality of work delivered. Thank you.'),
 (3, 'trevino34', 'CEO of ........... (United Kingdom)', 'The delivery date and quality of the code were outstanding! Fantastic work that exceeds expectations! Highly recommended, will definitely use his services again!'),
 (4, 'leonard46', 'CEO OF........ (United States)', 'Seller really help me a lot, and the work is really fast. I really recommend this seller. And I for sure will make a business with him again.'),
-(5, 'slatif', 'CEO OF 7eTouch. (Bangladesh)', 'He is a professional seller. He is a static website designer. Fantastic work that exceeds expectations! will definitely use his services again! Recommended');
+(5, 'slatif', 'CEO OF 7eTouch. (Bangladesh)', 'He is a professional seller. He is a static website designer. Fantastic work that exceeds expectations! will definitely use his services again! Recommended'),
+(6, 'cdv', 'bvvbcbvc', 'bvcbvcb');
 
 -- --------------------------------------------------------
 
@@ -297,7 +298,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `full_name`, `designation`, `email_address`, `phone_number`, `gender`, `date_of_birth`, `password`, `profile_photo`, `created_at`) VALUES
-(27, 'Md Sabbir Ahammed', 'admin', 'admin@email.com', '01953321402', 'male', '1999-10-09', '25d55ad283aa400af464c76d713c07ad', '11346426981632064416.png', '2021-09-01 21:21:38');
+(27, 'Md Sabbir Ahammed', 'admin', 'admin@email.com', '01953321402', 'male', '1999-10-09', '25d55ad283aa400af464c76d713c07ad', '1270737621714628040.png', '2021-09-01 21:21:38');
 
 --
 -- Indexes for dumped tables
@@ -426,7 +427,7 @@ ALTER TABLE `subscribers`
 -- AUTO_INCREMENT for table `testimonials`
 --
 ALTER TABLE `testimonials`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `theme_default`

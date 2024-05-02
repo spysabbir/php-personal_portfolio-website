@@ -70,5 +70,4 @@ if($submit_ability){
     $_SESSION['missing_status'] = "Project details missing! Please fill in the required information.";
     header('location: project.php');
 }
-
 ?>

@@ -1,4 +1,3 @@
-
 <?php 
 session_start();
     require_once "dbc.php";
@@ -20,12 +19,12 @@ session_start();
         mysqli_query(connect_to_db(), $update_query);
     }
 
-        $news_headline = $_POST['news_headline'];
-        $news_id = $_POST['news_id'];
-        $news_details = $_POST['news_details'];
-        $update_query = "UPDATE news SET news_headline = '$news_headline', news_details = '$news_details' WHERE id = '$news_id'";
-        mysqli_query(connect_to_db(), $update_query);
-        $_SESSION['edit_status'] = "News Edit Successfully!";
-        header('location: news.php');
+    $news_headline = $_POST['news_headline'];
+    $news_id = $_POST['news_id'];
+    $news_details = $_POST['news_details'];
+    $update_query = "UPDATE news SET news_headline = '$news_headline', news_details = '$news_details' WHERE id = '$news_id'";
+    mysqli_query(connect_to_db(), $update_query);
+    $_SESSION['edit_status'] = "News Edit Successfully!";
+    header('location: news.php');
 
 ?>

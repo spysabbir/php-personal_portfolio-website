@@ -16,6 +16,8 @@ if (!isset($_SESSION['login_status'])) {
 
     <title><?= spy_sabbir_update('theme_default', 'owner_name'); ?> | Admin</title>
 
+    <link rel="icon" href="img/favicon.png" type="image/png">
+
     <!-- vendor css -->
     <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">

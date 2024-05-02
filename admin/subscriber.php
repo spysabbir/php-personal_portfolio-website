@@ -5,7 +5,6 @@ require_once "dbc.php";
 
 $select_query = "SELECT * FROM subscribers ORDER BY id DESC";
 $databage_result = mysqli_query(connect_to_db(), $select_query);
-
 ?>
 
 <nav class="breadcrumb sl-breadcrumb">

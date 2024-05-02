@@ -1,7 +1,7 @@
 <?php
     session_start();
     require_once "dbc.php";
-// Update Query
+    // Update Query
     $id = $_POST['id'];
     $customer_name = $_POST['customer_name'];
     $customer_details = $_POST['customer_details'];

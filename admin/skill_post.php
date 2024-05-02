@@ -16,7 +16,6 @@ if (!$_POST['percentage']) {
     $_SESSION['old_skill_percentage'] = $_POST['percentage'];
 }
 
-
 if($submit_ability){
     $skill_name = $_POST['skill_name'];
     $percentage = $_POST['percentage'];
@@ -30,5 +29,4 @@ else{
     $_SESSION['missing_status'] = "Skill details missing! Please fill in the required information.";
     header('location: skill.php');
 }
-
 ?>

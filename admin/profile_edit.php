@@ -2,7 +2,6 @@
 $profile = true;
 require_once "inc/header.php";
 require_once "dbc.php";
-
 ?>
 
 <nav class="breadcrumb sl-breadcrumb">
@@ -22,6 +21,7 @@ require_once "dbc.php";
             <div class="col-lg-8">
                 <form method="POST" action="profile_edit_post.php" enctype="multipart/form-data" id="edit_form">
                     <div class="form-layout">
+
                         <div class="row mg-b-25 justify-content-center">
                             <div class="col-lg-4">
                                 <div class="form-group">
@@ -46,6 +46,7 @@ require_once "dbc.php";
                                 </div>
                             </div>
                         </div>
+
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
@@ -100,8 +101,6 @@ require_once "dbc.php";
         </div>
     </div><!-- card -->
 </div><!-- sl-pagebody -->
-
-
 
 <?php
 require_once "inc/footer.php";

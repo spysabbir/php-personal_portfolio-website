@@ -2,7 +2,6 @@
 $news = true;
 require_once "inc/header.php";
 require_once "dbc.php";
-
 ?>
 
 <nav class="breadcrumb sl-breadcrumb">

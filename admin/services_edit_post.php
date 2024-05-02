@@ -18,8 +18,7 @@ if($_FILES['service_new_cover_photo']['name']){
     $update_query = "UPDATE services SET service_photo = '$new_photo_name' WHERE service_photo = '$service_old_photo'";
     mysqli_query(connect_to_db(), $update_query);
 }
-// Update Query
-    
+    // Update Query
     $service_id = $_POST['service_id'];
     $service_icon_name = $_POST['service_icon_name'];
     $service_name = $_POST['service_name'];
@@ -28,5 +27,4 @@ if($_FILES['service_new_cover_photo']['name']){
     mysqli_query(connect_to_db(), $update_query);
     $_SESSION['edit_status'] = "Service Edit Successfully!";
     header('location: services.php');
-
 ?>

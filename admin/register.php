@@ -10,11 +10,7 @@ session_start();
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Meta -->
-  <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
-  <meta name="author" content="ThemePixels">
-
-  <title>Register | Spy Sabbir | Portfolio Template</title>
+  <title>Register | <?= spy_sabbir_update('theme_default', 'owner_name'); ?> | Portfolio Template</title>
 
   <!-- vendor css -->
   <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -30,7 +26,7 @@ session_start();
   <div class="d-flex align-items-center justify-content-center bg-sl-primary ht-md-100v">
 
     <div class="login-wrapper wd-300 wd-xs-400 pd-25 pd-xs-40 bg-white">
-      <div class="signin-logo tx-center tx-24 tx-bold tx-inverse">Spy Sabbir <span class="tx-info tx-normal">Register</span></div>
+      <div class="signin-logo tx-center tx-24 tx-bold tx-inverse"><?= spy_sabbir_update('theme_default', 'owner_name'); ?> <span class="tx-info tx-normal">Register</span></div>
       <div class="tx-center mg-b-50">Register with your personal information</div>
       
       <form method="POST" action="register_post.php">

@@ -11,17 +11,11 @@ require_once "dbc.php";
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-  <!-- Meta -->
-  <meta name="description" content="Premium Quality and Responsive UI for Dashboard.">
-  <meta name="author" content="ThemePixels">
-
   <title>Login | <?= spy_sabbir_update('theme_default', 'owner_name'); ?> | Portfolio Template</title>
 
   <!-- vendor css -->
   <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet">
   <link href="lib/Ionicons/css/ionicons.css" rel="stylesheet">
-
 
   <!-- Starlight CSS -->
   <link rel="stylesheet" href="css/starlight.css">

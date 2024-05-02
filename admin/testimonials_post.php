@@ -39,5 +39,4 @@ if($submit_ability){
     $_SESSION['missing_status'] = "Testimonials details missing! Please fill in the required information.";
     header('location: testimonials.php');
 }
-
 ?>

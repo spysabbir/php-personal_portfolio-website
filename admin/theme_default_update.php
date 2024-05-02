@@ -42,6 +42,7 @@ foreach($_POST as $default_item_name => $default_item_value){
     $update_query = "UPDATE theme_default SET default_item_value = '$default_item_value' WHERE  default_item_name = '$default_item_name'";
     mysqli_query(connect_to_db(), $update_query);
 }
+
 $_SESSION['add_status'] = "Default Content Upload Successfully!";
 header('location: theme_default.php');
 ?>

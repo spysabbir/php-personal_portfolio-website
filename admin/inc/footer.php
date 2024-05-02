@@ -12,14 +12,9 @@
     </div>
 </footer>
 </div><!-- sl-mainpanel -->
+
 <!-- ########## END: MAIN PANEL ########## -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-    $(document).ready(function() {
-        $('#contact_message_table').DataTable();
-    });
-</script>
-<script src="lib/jquery/jquery.js"></script>
 <script src="lib/popper.js/popper.js"></script>
 <script src="lib/bootstrap/bootstrap.js"></script>
 <script src="lib/jquery-ui/jquery-ui.js"></script>
@@ -35,8 +30,13 @@
 <script src="js/starlight.js"></script>
 <script src="js/ResizeSensor.js"></script>
 <script src="js/custom.js"></script>
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script>
+    $(document).ready(function() {
+        $('#contact_message_table').DataTable();
+    });
+</script>
 
 </body>
 

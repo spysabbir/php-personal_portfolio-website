@@ -1,7 +1,7 @@
 <?php
 session_start();
     require_once "dbc.php";
-// Update Query
+    // Update Query
     $id = $_POST['id'];
     $skill_name = $_POST['skill_name'];
     $percentage = $_POST['percentage'];

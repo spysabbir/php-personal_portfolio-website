@@ -5,7 +5,9 @@ require_once "dbc.php";
 if ($_FILES['profile_new_photo']['name']) {
     // Photo Delate
     $link = "img/users/" . $_POST['profile_old_photo'];
-    unlink($link);
+    if (file_exists($link)){
+        unlink($link);
+    }
     // Photo Upload Start
     $uploaded_photo = $_FILES['profile_new_photo'];
     $after_explode = explode('.', $uploaded_photo['name']);

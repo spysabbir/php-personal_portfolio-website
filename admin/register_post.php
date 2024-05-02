@@ -14,14 +14,14 @@ session_start();
         $_SESSION['email_address_error'] = "Please fill up your email address";
         $register_ability = false;
     }else {
-    $_SESSION['old_email'] = $_POST['email_address'];
+        $_SESSION['old_email'] = $_POST['email_address'];
     }
 
     if(!isset($_POST['gender'])){
         $_SESSION['gender_error'] = "Please select your gender";
         $register_ability = false;
     }else {
-    $_SESSION['old_gender'] = $_POST['gender'];
+        $_SESSION['old_gender'] = $_POST['gender'];
     }
 
     if(!$_POST['password']){
@@ -32,13 +32,12 @@ session_start();
         $_SESSION['confirm_password_error'] = "Please fill up your confirm password";
         $register_ability = false;
     }else{
-    if ($_POST['password'] != $_POST['confirm_password']) {
-        $_SESSION['password_match_error'] = "Your password and confirm password not match ";
-        $register_ability = false;
-    }
+        if ($_POST['password'] != $_POST['confirm_password']) {
+            $_SESSION['password_match_error'] = "Your password and confirm password not match ";
+            $register_ability = false;
+        }
     }
     
-
     if($register_ability){
         $full_name = $_POST['full_name'];
         $email_address = $_POST['email_address'];
@@ -61,12 +60,7 @@ session_start();
             $_SESSION['registion_email_address'] = $email_address;
             header('location: login.php');
         };
-
     }else{
         header('location: register.php');
     }
-
-
-
-
 ?>
